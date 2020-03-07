@@ -13,11 +13,11 @@
     client.on('connect', () => {
         console.log('connected');
     });
-    client.subscribe("test_topic");
+    client.subscribe("joints");
     client.on('message', function (topic, payload) {
         console.log([topic, payload].join(": "))
     });
-    client.publish("test_topic", "hello world!")
+    //client.publish("test_topic", "hello world!")
 </script>
 
 </html>
